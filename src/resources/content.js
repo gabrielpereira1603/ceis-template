@@ -59,7 +59,7 @@ const home = {
   featured: {
     display: true,
     title: <>Campanha:<strong className="ml-4">Três Amores</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "https://atualiza.aceis.org.br/ADMarquivo/arquivos/pdf/REGULAMENTO_CAMPANHA_TR%C3%8ASAMORES.pdf",
   },
   subline: (
     <>

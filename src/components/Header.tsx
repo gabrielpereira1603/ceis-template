@@ -117,10 +117,14 @@ export const Header = () => {
                     href="/about"
                     label={about.label}
                     selected={pathname === "/about"}
+                    style={{
+                      backgroundColor: "#FFF9C4",    // amarelo suave
+                      color:           "#333",       // texto escuro pra contraste
+                    }}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="info"
+                    prefixIcon="infoCircle"
                     href="/about"
                     selected={pathname === "/about"}
                   />
