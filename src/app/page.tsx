@@ -61,7 +61,7 @@ export default function Home() {
                     size="m"
                   />
                 )}
-                {about.title}
+                {'Sobre ' + person.name}
               </Flex>
             </Button>
           </RevealFx>

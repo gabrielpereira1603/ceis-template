@@ -3,7 +3,10 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
+
 
 import { routes, display, person, about, blog, work, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
@@ -60,13 +63,24 @@ export const Header = () => {
         horizontal="center"
         data-border="rounded"
       >
-        <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Flex hide="s">{person.location}</Flex>}
+        <Flex paddingLeft="12" fillWidth vertical="center">
+          {display.location && (
+            <Flex hide="s" vertical="center">
+              <Image
+                src="/images/logo.png"
+                alt="Logo da Empresa"
+                width={42}
+                height={42}
+                priority
+              />
+            </Flex>
+          )}
         </Flex>
+
         <Flex fillWidth horizontal="center">
           <Flex
             background="page"
-            border="neutral-alpha-weak"
+            border="warning-medium"
             radius="m-4"
             shadow="l"
             padding="4"
@@ -78,18 +92,35 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
+              {routes["/calendar"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="calendar"
+                    href="/calendar"
+                    label="Calendário"
+                    selected={pathname.startsWith("/calendar")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="calendar"
+                    href="/calendar"
+                    selected={pathname.startsWith("/calendar")}
+                  />
+                </>
+              )}
               {routes["/about"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="person"
+                    prefixIcon="info"
                     href="/about"
                     label={about.label}
                     selected={pathname === "/about"}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="person"
+                    prefixIcon="info"
                     href="/about"
                     selected={pathname === "/about"}
                   />

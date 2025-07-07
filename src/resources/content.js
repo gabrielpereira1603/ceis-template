@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "ACEIS -",
+  lastName: "Ilha Solteira",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
+  role: "Promover de maneira sustentável o desenvolvimento econômico e social contínuo dos empreendedores e da cidade de Ilha Solteira.",
+  avatar: "/images/logo.png",
   email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Sao_Paulo",
+  languages: ["English", "Portugues"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -51,27 +51,26 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/home2.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Capacitando empreendedores por meio do desenvolvimento sustentável</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Campanha:<strong className="ml-4">Três Amores</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Promover de maneira sustentável o desenvolvimento econômico e social contínuo dos empreendedores e da cidade de Ilha Solteira.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
+  label: "Sobre",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -196,9 +195,19 @@ const about = {
   },
 };
 
+const calendar = {
+  path: "/calendar",
+  label: "Calendário",
+  title: "Calendario de eventos...",
+  description: `Veja o calendario de eventos de ${person.name}.`,
+  // Create new blog posts by adding a new .mdx file to app/blog/posts
+  // All posts will be listed on the /blog route
+};
+
+
 const blog = {
   path: "/blog",
-  label: "Blog",
+  label: "Fotos",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
@@ -265,4 +274,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, calendar };
