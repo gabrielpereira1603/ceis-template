@@ -28,7 +28,7 @@ export default function Home() {
           {home.featured.display && (
           <RevealFx fillWidth horizontal="start" paddingTop="16" paddingBottom="32" paddingLeft="12">
             <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
-              href={home.featured.href} target="_blank">
+              href={home.featured.href}>
                 <Row paddingY="2" >
                   <FaInfoCircle size={16} style={{ marginRight: "8px" }} />     
                   {home.featured.title}
@@ -79,7 +79,7 @@ export default function Home() {
         <Flex fillWidth gap="24" mobileDirection="column">
           <Flex flex={1} paddingLeft="l" paddingTop="24">
             <Heading as="h2" variant="display-strong-xs" wrap="balance">
-              Latest from the blog
+              Acompanhe as ultimas notícias
             </Heading>
           </Flex>
           <Flex flex={3} paddingX="20">
