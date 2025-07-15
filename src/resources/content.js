@@ -71,7 +71,7 @@ const home = {
 const about = {
   path: "/about",
   label: "Sobre",
-  title: `About – ${person.name}`,
+  title: `Sobre – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -86,31 +86,31 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Quem Somos",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        <strong>ACEIS</strong> é uma instituição comprometida com o desenvolvimento econômico e social
+        sustentável. Desde 2018, apoiamos empreendedores locais através de projetos,
+        capacitações e parcerias estratégicas.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Nossas Iniciativas",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Campanha Três Amores",
+        timeframe: "2024 – Presente",
+        role: "Projeto de Impacto Social",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Mobilizamos mais de 300 empreendedores de Ilha Solteira em ações sustentáveis,
+            gerando um incremento médio de 15% na renda local.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Desenvolvemos um guia prático de boas práticas ambientais distribuído em 10
+            municípios vizinhos.
           </>,
         ],
         images: [
@@ -124,17 +124,17 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Programa Verde + Tech",
+        timeframe: "2022 – 2024",
+        role: "Inovação Tecnológica",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Implantamos 5 hackathons focados em soluções verdes, com 20 protótipos apresentados
+            e 3 startups aceleradas.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Criamos uma plataforma digital de troca de materiais recicláveis, com mais de
+            1.000 usuários ativos.
           </>,
         ],
         images: [],
@@ -143,25 +143,30 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Parcerias e Certificações",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "SEBRAE",
+        description: <>Curso de Gestão para Pequenos Negócios Sustentáveis.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Instituto Ethos",
+        description: <>Certificação em Responsabilidade Social Empresarial.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Competências Chave",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Gestão de Projetos",
+         description: (
+          <>
+            Planejamento e execução de programas socioambientais com foco em resultados
+            mensuráveis.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -179,8 +184,13 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Engajamento Comunitário",
+        description: (
+          <>
+            Mobilização de stakeholders e condução de workshops para adoção de práticas
+            sustentáveis.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -203,7 +213,6 @@ const calendar = {
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
-
 
 const blog = {
   path: "/blog",
